@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/moder"
+        android:background="@color/holo_blue_light"
+        android:textSize="18sp">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/algorithmstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </Spinner>
+
+    <!-- 初始值：0~15 dBm -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/init"
+        android:background="@color/holo_blue_light"
+        android:textSize="18sp">
+    </TextView>
+    <EditText
+        android:id="@+id/init"
+        android:hint="@string/init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+    <!-- 最小值：0~15 dBm -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/min"
+        android:background="@color/holo_blue_light"
+        android:textSize="18sp">
+    </TextView>
+    <EditText
+        android:id="@+id/minvalue"
+        android:hint="@string/min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+    <!-- 最大值：0~15 dBm -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/max"
+        android:background="@color/holo_blue_light"
+        android:textSize="18sp">
+    </TextView>
+    <EditText
+        android:id="@+id/maxvalue"
+        android:hint="@string/max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </EditText>
+</LinearLayout>

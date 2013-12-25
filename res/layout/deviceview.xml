@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/detelmessage"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!--
+        垂直居中 右对齐
+		android:gravity="center_vertical|right"
+            -->
+
+            <TextView
+                android:id="@+id/devname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/devname"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_devname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:layout_toRightOf="@+id/devname"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!--
+        垂直居中 右对齐
+		android:gravity="center_vertical|right"
+            -->
+
+            <TextView
+                android:id="@+id/devnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/devnum"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_devnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:layout_toRightOf="@id/devnum"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/devgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/devgroup"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:layout_toRightOf="@+id/devgroup"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/factory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/factory"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_factory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:layout_toRightOf="@+id/factory"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/prodate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/productdate"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_prodate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:layout_toRightOf="@+id/prodate"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/recdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/recivedate"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_recdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:layout_toRightOf="@+id/recdate"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/modifydate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/modifydate"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_modifydate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:layout_toRightOf="@+id/modifydate"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dminfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/modifyresult"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/dmlist"
+            android:layout_width="match_parent"
+            android:layout_height="171dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ListView
+            android:id="@+id/myListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/blue"
+            android:dividerHeight="3dip"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="vertical" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dbut_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/modify" />
+
+        <Button
+            android:id="@+id/dbut_return"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</LinearLayout>

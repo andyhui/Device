@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Device</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">欢迎登录系统</string>
+    <string name="company">公司</string>
+    <string name="login">登录</string>
+    <string name="login_name">请输入用户名</string>
+    <string name="login_password">请输入登录密码</string>
+    <string name="userinformation">用户信息</string>
+    <string name="deviceinformation">设备信息</string>
+    <string name="modifyinformation">维护信息</string>
+    <string name="search">搜索</string>
+    <string name="muti_select">多选</string>
+    <string name="in_name">请输入姓名</string>
+    <string name="in_level">请输入权限</string>
+    <string name="name">姓名：</string>
+    <string name="level">权限：</string>
+    <string name="password">密码：</string>
+    <string name="headimage">头像</string>
+    <string name="detelmessage">详细信息</string>
+    <string name="modifymessage">修改信息</string>
+    <string name="modify">修改</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="addmessage">增加信息</string>
+    <string name="remove">删除</string>
+    <string name="selectall">全选</string>
+    <string name="nodate">oo</string>
+    <string name="devname">设备名称：</string>
+    <string name="factory">生产厂家：</string>
+    <string name="devnum">设备编号：</string>
+    <string name="devgroup">设备批次：</string>
+    <string name="productdate">生产日期：</string>
+    <string name="recivedate">签收日期：</string>
+    <string name="modifydate">维修日期：</string>
+    <string name="in_devname">请输入设备名称</string>
+    <string name="in_devnum">请输入设备编号</string>
+    <string name="in_devgroup">请输入设备批次</string>
+    <string name="in_factory">请输入生产厂商</string>
+    <string name="in_prodate">请输入生产日期</string>
+    <string name="in_recdate">请输入签收日期</string>
+    <string name="in_modifydate">请输入最近一次维修日期</string>
+    <string name="modifyresult">维修信息</string>
+    <string name="sendperson">送装人名：</string>
+    <string name="recperson">接装人名：</string>
+    <string name="mtimes">维修次数：</string>
+    <string name="prelever">维修等级：</string>
+    <string name="faultcause">故障原因：</string>
+    <string name="consume">消耗器材：</string>
+    <string name="finishdate">修竣时间：</string>
+    <string name="in_sperson">请输入送装人名</string>
+    <string name="in_rperson">请输入接装人名</string>
+    <string name="in_mtimes">请输入维修次数</string>
+    <string name="in_mlevel">请输入维修等级</string>
+    <string name="in_confume">请输入消耗器材</string>
+    <string name="in_finishdate">请输入修竣时间</string>
+    <string name="in_faultcause">请输入故障原因</string>
+    <string name="in_devnameorid">请输入设备名或设备编号</string>
+    <string name="loginperson">当前登录：</string>
+    <string name="logout">注销</string>
+    <string name="select_fault">请选择故障现象</string>
+    <string name="face">外观</string>
+    <string name="function">功能</string>
+    <string name="system_check">自检</string>
+    <string name="other">其他</string>
+    <string name="check">RFID扫描</string>
+    <string name="searching">扫描中>>></string>
+    <string name="wait">请等待！</string>
+    <string name="writein">RFID写入</string>
+    <string name="emegency">紧急修复</string>
+    <string name="writing">写入中>>></string>
+    <string name="singlesearch">单次扫描</string>
+    <string name="loopsearch">循环扫描</string>
+    <string name="init_serial">串口扫描</string>
+    <string name="port_select">串口：</string>
+    <string name="set_baudrate">波特率：</string>
+    <string name="sure">确定</string>
+
+    <!-- huiwuliu -->
+
+    <string name="more_select">其他选择</string>
+    <string name="face_prob1">显示屏不亮</string>
+    <string name="face_prob2">机器过热</string>
+    <string name="face_prob3">电线断裂</string>
+    <string name="face_prob4">显示屏损坏</string>
+    <string name="face_prob5">天线折损</string>
+    <string name="function_prob1">指示灯不亮</string>
+    <string name="function_prob2">按钮失效</string>
+    <string name="function_prob3">键盘失效</string>
+    <string name="function_prob4">无法开机</string>
+    <string name="function_prob5">听筒无效</string>
+    <string name="system_check_prob1">接触不良</string>
+    <string name="system_check_prob2">蜂鸣报警</string>
+    <string name="system_check_prob3">指示灯报警</string>
+    <string name="system_check_prob4">电流过大</string>
+    <string name="system_check_prob5">扇区损坏</string>
+    <string name="otherprob">请输入</string>
+    <string name="eme_other">其他</string>
+    <string name="device_prob">设备问题：</string>
+    <string name="fault_cause">故障现象</string>
+    <string name="sloved_method">解决方法</string>
+    <string name="in_sloved_method">请输入解决方法</string>
+    <string name="history_fault">维修历史</string>
+    <string name="update_fault">故障现象</string>
+    <string name="history_sloved">解决方案</string>
+    <string name="update_sloved">更新解决方案</string>
+    <string name="ok">确定</string>
+    <string name="delete">取消</string>
+    <string name="fraquency">频率</string>
+    <string name="rflink">rflink选择</string>
+    <string name="antennaA">天线1</string>
+    <string name="antennaB">天线2</string>
+    <string name="antennaC">天线3</string>
+    <string name="antennaD">天线4</string>
+    <string name="moder">模式</string>
+    <string name="readpower">读功率</string>
+    <string name="writepower">写功率</string>
+    
+    <string name="inqurytime">循环查询周期时间</string>
+    <string name="time">时间</string>
+    
+    <string name="init">初始值</string>
+    <string name="min">最小值</string>
+    <string name="max">最大值</string>
+    <string name="gpio1">电平1</string>
+    <string name="gpio2">电平2</string>
+    <string name="gpio3">电平3</string>
+    <string name="gpio4">电平4</string>
+    <string name="gpio5">电平5</string>
+    <string name="gpio6">电平6</string>
+    <string name="gpio7">电平7</string>
+    <string name="gpio8">电平8</string>
+    
+    <string name="inlabel">录入</string>
+    
+    <string name="solvetest">我经常自己给汽车换油，虽然比较脏也并不怎么省钱，但是肯定省时间！可是这个车灯亮了我就没办法了，实际上去Walmart的换油好像也不把这个灯灭掉，每到这时候我去FireStone换油，那里会把灯灭掉。我希望自己能够灭掉这个灯。</string>
+
+    <!-- huiwuliu -->
+
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    > 
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset" >
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" >
+
+<TextView
+    android:id="@+id/info"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/detelmessage"
+    android:textSize="20sp" />
+
+    <RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+		<!-- 垂直居中 右对齐
+		android:gravity="center_vertical|right"
+		 -->
+
+		<TextView
+		    android:id="@+id/name"
+		    android:layout_width="60dip"
+		    android:layout_height="40dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/name"
+		    android:textSize="18sp" />
+
+		<TextView
+		    android:id="@+id/tv_name"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dip"
+		    android:layout_toRightOf="@+id/name"
+		    android:gravity="center_vertical|left"		    
+		    android:textSize="16sp" />
+
+</RelativeLayout>
+<RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+		<!-- 垂直居中 右对齐
+		android:gravity="center_vertical|right"
+		 -->
+		
+		<TextView
+		    android:id="@+id/level"
+		    android:layout_width="60dip"
+		    android:layout_height="40dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/level"
+		    android:textSize="18sp" />
+		
+		<TextView
+		    android:id="@+id/tv_mlevel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dip"
+		    android:layout_toRightOf="@id/level"
+		    android:gravity="center_vertical|left"
+		    android:textSize="16sp" />
+
+</RelativeLayout>
+<RelativeLayout 
+ android:layout_width="fill_parent" 
+android:layout_height="wrap_content" 
+ 
+ >
+
+	<TextView
+	    android:id="@+id/devgroup"
+	    android:layout_width="60dip"
+	    android:layout_height="40dip"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginRight="8dip"
+	    android:gravity="center_vertical|right"
+	    android:text="@string/password"
+	    android:textSize="18sp" />
+
+ <TextView
+     android:id="@+id/tv_group"
+     android:layout_width="fill_parent"
+     android:layout_height="40dp"
+     android:layout_alignParentRight="true"
+     android:layout_marginRight="5dip"
+     android:layout_toRightOf="@+id/devgroup"
+     android:gravity="center_vertical|left"
+     android:textSize="16sp" />
+
+ </RelativeLayout>
+
+ </LinearLayout>
+</ScrollView>
+<LinearLayout 
+android:layout_height="wrap_content" 
+android:layout_width="fill_parent"
+android:orientation="horizontal" 
+
+ android:layout_marginBottom="5dip">
+
+  <Button
+      android:id="@+id/but_update"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/modify" />
+  
+    <Button
+        android:id="@+id/but_return"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/back" />
+
+  </LinearLayout>  
+</LinearLayout>
+

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_blue_light"
+            android:text="@string/gpio1"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gpiomaskA"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_blue_light"
+            android:text="@string/gpio2"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gpiomaskB"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_blue_light"
+            android:text="@string/gpio3"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gpiomaskC"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_blue_light"
+            android:text="@string/gpio4"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gpiomaskD"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" 
+            android:layout_weight="2">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_blue_light"
+            android:text="@string/gpio5"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gpiomaskE"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_blue_light"
+            android:text="@string/gpio6"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gpiomaskF"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_blue_light"
+            android:text="@string/gpio7"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gpiomaskG"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/holo_blue_light"
+            android:text="@string/gpio8"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gpiomaskH"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </Spinner>
+    </LinearLayout>
+
+</LinearLayout>

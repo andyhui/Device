@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/moder"
+        android:background="@color/holo_blue_light"
+        android:textSize="18sp">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/moder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </Spinner>
+
+    <!-- 读功率：5~30 dBm -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/readpower"
+        android:background="@color/holo_blue_light"
+        android:textSize="18sp">
+    </TextView>
+    <EditText
+        android:id="@+id/read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+    <!-- 写功率：5~30 dBm -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/writepower"
+        android:background="@color/holo_blue_light"
+        android:textSize="18sp">
+    </TextView>
+    <EditText
+        android:id="@+id/write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+</LinearLayout>

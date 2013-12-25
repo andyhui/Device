@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset" >
+  	<LinearLayout
+      	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="vertical" >
+
+	<TextView
+    	android:id="@+id/dainfo"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:text="@string/addmessage"
+    	android:textSize="20sp" />
+
+    <RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:id="@+id/tv_devname"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/devname"
+		    android:textSize="18sp" />
+
+		<EditText
+		    android:id="@+id/et_tv_devname"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dip"
+		    android:layout_marginTop="5dip"
+		    android:layout_toRightOf="@+id/tv_devname"
+		    android:hint="@string/in_devname"
+		    android:textColor="#606060"
+		    android:textSize="16sp" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >	
+
+		<TextView
+		    android:id="@+id/tv_devnum"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/devnum"
+		    android:textSize="18sp" />
+
+		<EditText
+		    android:id="@+id/et_tv_devnum"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dip"
+		    android:layout_marginTop="5dip"
+		    android:layout_toRightOf="@+id/tv_devnum"
+		    android:hint="@string/in_devnum"
+		    android:textColor="#606060"
+		    android:textSize="16sp" />
+
+</RelativeLayout>
+ <RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:id="@+id/tv_devgroup"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/devgroup"
+		    android:textSize="18sp" />
+
+		<EditText
+		    android:id="@+id/et_tv_devgroup"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dip"
+		    android:layout_marginTop="5dip"
+		    android:layout_toRightOf="@id/tv_devgroup"
+		    android:hint="@string/in_devgroup"
+		    android:textColor="#606060"
+		    android:textSize="16sp" />
+
+	</RelativeLayout>
+	<RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:id="@+id/tv_factory"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/factory"
+		    android:textSize="18sp" />
+
+		<EditText
+		    android:id="@+id/et_tv_factory"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dip"
+		    android:layout_marginTop="5dip"
+		    android:layout_toRightOf="@+id/tv_factory"
+		    android:hint="@string/in_factory"
+		    android:textColor="#606060"
+		    android:textSize="16sp" />
+
+</RelativeLayout>
+<RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:id="@+id/tv_prodate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/productdate"
+		    android:textSize="18sp" />
+
+		<EditText
+		    android:id="@+id/et_tv_prodate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    android:layout_marginTop="5dip"
+		    android:layout_toLeftOf="@+id/button1"
+		    android:layout_toRightOf="@+id/tv_prodate"
+		    android:hint="@string/in_prodate"
+		    android:textColor="#606060"
+		    android:textSize="16sp" />
+
+		<Button
+		    android:id="@+id/button1"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginRight="15dp" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:id="@+id/tv_recdate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/recivedate"
+		    android:textSize="18sp" />
+
+		<EditText
+		    android:id="@+id/et_tv_recdate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    android:layout_marginTop="5dip"
+		    android:layout_toRightOf="@+id/tv_recdate"
+		    android:layout_toLeftOf="@+id/Button01"
+		    android:hint="@string/in_recdate"
+		    android:textColor="#606060"
+		    android:textSize="16sp" />
+
+		<Button
+		    android:id="@+id/Button01"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignBaseline="@+id/et_tv_recdate"
+		    android:layout_alignBottom="@+id/et_tv_recdate"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="14dp" />
+
+</RelativeLayout>
+<RelativeLayout
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:id="@+id/tv_modifydate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="8dip"
+		    android:gravity="center_vertical|right"
+		    android:text="@string/modifydate"
+		    android:textSize="18sp" />
+
+		<EditText
+		    android:id="@+id/et_tv_modifydate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    android:layout_marginTop="5dip"
+		    android:layout_toRightOf="@+id/tv_modifydate"
+		    android:hint="@string/in_modifydate"
+		    android:textColor="#606060"
+		    android:textSize="16sp" />
+
+		<Button
+		    android:id="@+id/Button02"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignBottom ="@id/et_tv_modifydate" 
+		    android:layout_marginRight="14dp" />
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>
+
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal" >
+
+      <Button
+          android:id="@+id/dabut_save"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/inlabel" />
+
+      <Button
+          android:id="@+id/dabut_list"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/back" />
+  </LinearLayout>
+  
+</LinearLayout>
