@@ -33,6 +33,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.norinco.device.DeviceViewActivity;
+import com.norinco.device.MessageListActivity;
 import com.norinco.device.R;
 
 @SuppressLint("NewApi")
@@ -50,8 +51,13 @@ public class FragmentPage1 extends Fragment {
 
 	private static int miCount = 0;
 
-	private int off = R.drawable.radio_off;
-	private int on = R.drawable.radio_on;
+	// private int off = R.drawable.radio_off;
+	// private int on = R.drawable.radio_on;
+
+	// private int off = R.drawable.checkbox_normal;
+	private int off = R.drawable.circle_delete;
+	private int on = R.drawable.circle_ok;
+	private int init = R.drawable.circle;
 
 	private static int checkbox_c1 = 1;
 	private static int checkbox_c2 = 2;
@@ -77,15 +83,28 @@ public class FragmentPage1 extends Fragment {
 	private Button mButtonOk = null;
 	private Button mButtonFault = null;
 
+	private Button mSave = null;
+	private Button mBack = null;
+
+	ArrayList<ListStatus> arrList = new ArrayList<ListStatus>();
+
 	ListView m_ListView = null;
 	List<HashMap<String, Object>> mList = null;
 	SimpleAdapter adapter;
+
+	private int selectItem;
+	private boolean flag = false;
+	private int countMethod = 0;
+	MethodData methodData;
 
 	boolean c1_stat = false;
 	boolean c2_stat = false;
 	boolean c3_stat = false;
 	boolean c4_stat = false;
 	boolean c5_stat = false;
+
+	private int level = 3;
+	private String user = "admin";
 
 	@Override
 	public void onDestroy() {
@@ -195,6 +214,8 @@ public class FragmentPage1 extends Fragment {
 		//
 		// mButtonOk.setOnClickListener(buttonListener);
 		// mButtonFault.setOnClickListener(buttonListener);
+		
+		methodData = new MethodData(getActivity());
 
 		mSQLiteDatabase = this.getActivity().openOrCreateDatabase(
 				DATABASE_NAME, 0, null);
@@ -226,17 +247,128 @@ public class FragmentPage1 extends Fragment {
 
 		e1 = (EditText) getActivity().findViewById(R.id.edit_message);
 
+		mSave = (Button) getActivity().findViewById(R.id.isave);
+		mBack = (Button) getActivity().findViewById(R.id.iback);
+
+		mSave.setOnClickListener(bListenler);
+		mBack.setOnClickListener(bListenler);
+
 		c1.setOnCheckedChangeListener(new CheckBoxListener());
 		c2.setOnCheckedChangeListener(new CheckBoxListener());
 		c3.setOnCheckedChangeListener(new CheckBoxListener());
 		c4.setOnCheckedChangeListener(new CheckBoxListener());
 		c5.setOnCheckedChangeListener(new CheckBoxListener());
+		
+		
 
 		/*
 		 * for (int i = 0; i < 5; i++) { insertTable(table_id[i], table_data[i],
 		 * table_method1[i]); }
 		 */
+
 	}
+
+	View.OnClickListener bListenler = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			if (v == mSave) {
+				/* 保存解决方案 */
+				System.out.println(flag);
+				if (flag == false) {
+					Dialog dlg = new AlertDialog.Builder(getActivity())
+							.setTitle("友情提示")
+							.setMessage("您还没有选择任何方案")
+							.setPositiveButton("确定",
+									new DialogInterface.OnClickListener() {
+
+										@Override
+										public void onClick(
+												DialogInterface dialog,
+												int which) {
+											// TODO Auto-generated method stub
+
+										}
+									})
+							/*
+							 * .setNeutralButton("退出", new
+							 * DialogInterface.OnClickListener() {
+							 * 
+							 * @Override public void onClick( DialogInterface
+							 * dialog, int which) { // TODO Auto-generated
+							 * method stub
+							 * 
+							 * } })
+							 */.create();
+					dlg.show();
+				}
+				int j = 0;
+				for(int i = 0;i < countMethod;i++ ){
+					System.out.println("解决方案是：");
+					System.out.println(arrList.get(i).isStatus());
+					if(arrList.get(i).isStatus()){
+						/*生成维修历史*/
+						insertData(arrList.get(i).getId(),table_data[miCount-1]+" "+"维修成功");
+					}else{
+						/*生成故障历史*/
+						j++;
+						if(j==countMethod){
+							System.out.println(miCount+table_data[miCount-1]);
+							methodData.insert(table_data[miCount-1], table_data[miCount-1]);
+						}
+					}
+				}
+				Toast.makeText(getActivity(), "方案已保存", Toast.LENGTH_SHORT)
+						.show();
+			} else if (v == mBack) {
+				/* 直接退出 */
+				if (flag == false) {
+					Dialog dlg = new AlertDialog.Builder(getActivity())
+							.setTitle("友情提示")
+							.setMessage("您还没有选择任何方案,确认退出吗？")
+							.setPositiveButton("确定",
+									new DialogInterface.OnClickListener() {
+
+										@Override
+										public void onClick(
+												DialogInterface dialog,
+												int which) {
+											// TODO Auto-generated method stub
+											Intent intent = new Intent();
+											intent.putExtra("level", level);
+											intent.putExtra("user", user);
+											intent.setClass(getActivity(),
+													MessageListActivity.class);
+											startActivity(intent);
+
+										}
+									})
+							.setNeutralButton("退出",
+									new DialogInterface.OnClickListener() {
+
+										@Override
+										public void onClick(
+												DialogInterface dialog,
+												int which) {
+											// TODO Auto-generated method stub
+
+										}
+									}).create();
+					dlg.show();
+				} else {
+					Toast.makeText(getActivity(), "直接退出", Toast.LENGTH_SHORT)
+							.show();
+					Intent intent = new Intent();
+					intent.putExtra("level", level);
+					intent.putExtra("user", user);
+					intent.setClass(getActivity(), MessageListActivity.class);
+					startActivity(intent);
+				}
+			}
+		}
+
+	};
 
 	class CheckBoxListener implements OnCheckedChangeListener {
 		@Override
@@ -295,7 +427,9 @@ public class FragmentPage1 extends Fragment {
 				miCount = 5;
 			}
 			// insertData(miCount, data);
+			flag = false;
 			update(miCount);
+			
 
 		}
 
@@ -310,6 +444,18 @@ public class FragmentPage1 extends Fragment {
 				KEY_NUM, KEY_DATA, KEY_METHOD }, getKeyNum() + "=" + num, null,
 				null, null, null, null);
 		int rows_num = cur_all.getCount();
+		for (int i = 0; i < rows_num; i++) {
+			ListStatus lStatus = new ListStatus();
+			lStatus.setId(i);
+			lStatus.setStatus(false);
+			arrList.add(lStatus);
+		}
+		countMethod = rows_num;
+
+		for (int i = 0; i < rows_num; i++) {
+			System.out.println(arrList.get(i).getId());
+		}
+
 		if (rows_num != 0) {
 			cur_all.moveToFirst();
 			for (int i = 0; i < rows_num; i++) {
@@ -318,7 +464,7 @@ public class FragmentPage1 extends Fragment {
 				String value = cur_all.getString(3);
 				System.out.println(value);
 				HashMap<String, Object> map = new HashMap<String, Object>();
-				map.put("image", off);
+				map.put("image", init);
 				map.put("text", value);
 				mList.add(map);
 				cur_all.moveToNext();
@@ -335,58 +481,29 @@ public class FragmentPage1 extends Fragment {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
-					final int position, long id) {
+					int position, long id) {
 				// TODO Auto-generated method stub
+				flag = true;
+				selectItem = position;
 				switch (position) {
-				case 0:
-					LayoutInflater factory = LayoutInflater.from(getActivity());
-					final View DialogView = factory.inflate(
-							R.layout.dialogview, null);
-					AlertDialog dialog = new AlertDialog.Builder(getActivity())
-							.setTitle("解决方案")
-							.setView(DialogView)
-							.setPositiveButton("可用",
-									new DialogInterface.OnClickListener() {
-
-										@Override
-										public void onClick(
-												DialogInterface dialog,
-												int which) {
-											// TODO Auto-generated method stub
-											System.out.println("可用");
-											Map<String, Object> map = (Map<String, Object>)adapter
-													.getItem(position);
-											map.put("imge", on);
-											adapter.notifyDataSetChanged();
-//											ChangeImg(position, true);
-
-										}
-									})
-							.setNeutralButton("不可用",
-									new DialogInterface.OnClickListener() {
-
-										@Override
-										public void onClick(
-												DialogInterface dialog,
-												int which) {
-											// TODO Auto-generated method stub
-											System.out.println("不可用");
-											ChangeImg(position, false);
-
-										}
-
-									}).create();
-					dialog.show();
+				case 0:					
+					showDialog();
 					break;
 				case 1:
+					showDialog();
 					break;
 				case 2:
+					showDialog();
 					break;
 				case 3:
+					showDialog();
 					break;
 				case 4:
+					showDialog();
 					break;
-
+				default:
+					showDialog();
+					break;
 				}
 
 			}
@@ -394,20 +511,45 @@ public class FragmentPage1 extends Fragment {
 		});
 	}
 
+	private void showDialog() {
+		LayoutInflater factory = LayoutInflater.from(getActivity());
+		final View DialogView = factory.inflate(R.layout.dialogview, null);
+		AlertDialog dialog = new AlertDialog.Builder(getActivity())
+				.setTitle("解决方案").setView(DialogView)
+				.setPositiveButton("可用", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						arrList.get(selectItem).setStatus(true);
+						ChangeImg(selectItem, true);
+
+					}
+				})
+				.setNeutralButton("不可用", new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						arrList.get(selectItem).setStatus(false);
+						ChangeImg(selectItem, false);
+					}
+
+				}).create();
+		dialog.show();
+	}
+
 	private void ChangeImg(int selectedItem, boolean b) {
 		SimpleAdapter la = adapter;
 		System.out.println(selectedItem);
 		@SuppressWarnings("unchecked")
-		Map<String, Object> map = (Map<String, Object>)la
+		Map<String, Object> map = (Map<String, Object>) la
 				.getItem(selectedItem);
 		if (b) {
-			map.put("imge", on);
-			System.out.println("可用改变图片");
+			map.put("image", on);
 		} else {
-			map.put("imge", off);
-			System.out.println("不可用改变图片");
+			map.put("image", off);
 		}
-		adapter.notifyDataSetChanged();
+		la.notifyDataSetChanged();
 	}
 
 	private void status(CheckBox cb, int cb_c) {

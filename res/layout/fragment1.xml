@@ -107,12 +107,33 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <TextView
-            android:layout_width="fill_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/history_sloved"
-            android:textColor="@color/blue"
-            android:textSize="20sp" />
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/history_sloved"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/isave"
+                android:layout_weight="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/iback"
+                android:layout_weight="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back" />
+        </LinearLayout>
 
         <ListView
             android:id="@+id/method_list"
