@@ -136,6 +136,8 @@
     <string name="inlabel">录入</string>
     
     <string name="solvetest">我经常自己给汽车换油，虽然比较脏也并不怎么省钱，但是肯定省时间！可是这个车灯亮了我就没办法了，实际上去Walmart的换油好像也不把这个灯灭掉，每到这时候我去FireStone换油，那里会把灯灭掉。我希望自己能够灭掉这个灯。</string>
+    <string name="upload">上传至服务器</string>
+    <string name="show">显示</string>
 
     <!-- huiwuliu -->
 

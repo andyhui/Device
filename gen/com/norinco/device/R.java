@@ -117,7 +117,7 @@ public final class R {
         public static final int TextView=0x7f09005c;
         public static final int TextView1=0x7f09007c;
         public static final int a_item=0x7f090064;
-        public static final int action_settings=0x7f0900c5;
+        public static final int action_settings=0x7f0900c8;
         public static final int admbut_list=0x7f0900aa;
         public static final int admbut_save=0x7f0900a9;
         public static final int algorithmstyle=0x7f090067;
@@ -129,7 +129,7 @@ public final class R {
         public static final int but_list=0x7f0900ad;
         public static final int but_return=0x7f09000e;
         public static final int but_save=0x7f09000d;
-        public static final int but_update=0x7f0900c4;
+        public static final int but_update=0x7f0900c7;
         public static final int button=0x7f090060;
         public static final int button1=0x7f09002b;
         public static final int button2=0x7f090052;
@@ -157,13 +157,14 @@ public final class R {
         public static final int dmlist=0x7f090048;
         public static final int drl_header_layout=0x7f090036;
         public static final int edit_message=0x7f09005d;
+        public static final int equipmentlist=0x7f0900be;
         public static final int et_alevel=0x7f09000b;
         public static final int et_aps=0x7f090009;
         public static final int et_dsearch=0x7f090039;
         public static final int et_mlevel=0x7f0900ac;
         public static final int et_mps=0x7f0900ab;
         public static final int et_name=0x7f090007;
-        public static final int et_search=0x7f0900bf;
+        public static final int et_search=0x7f0900c2;
         public static final int et_tv_aconsume=0x7f0900a6;
         public static final int et_tv_afinishdate=0x7f0900a8;
         public static final int et_tv_amlevel=0x7f0900a4;
@@ -198,10 +199,10 @@ public final class R {
         public static final int gpiomaskG=0x7f090071;
         public static final int gpiomaskH=0x7f090072;
         public static final int gridview01=0x7f0900b5;
-        public static final int gv_button_menu=0x7f0900c1;
+        public static final int gv_button_menu=0x7f0900c4;
         public static final int gv_dbutton_menu=0x7f09003b;
         public static final int ib_dsearch=0x7f090037;
-        public static final int ib_search=0x7f0900bd;
+        public static final int ib_search=0x7f0900c0;
         public static final int iback=0x7f09005a;
         public static final int imageView=0x7f090002;
         public static final int image_item=0x7f090074;
@@ -217,14 +218,14 @@ public final class R {
         public static final int item_image=0x7f090013;
         public static final int item_tv=0x7f090014;
         public static final int iv_dmulti_select=0x7f090038;
-        public static final int iv_multi_select=0x7f0900be;
-        public static final int level=0x7f0900c3;
+        public static final int iv_multi_select=0x7f0900c1;
+        public static final int level=0x7f0900c6;
         public static final int listView=0x7f0900b4;
         public static final int ll_cb=0x7f090016;
         public static final int login=0x7f090004;
         public static final int lv_cb=0x7f090015;
         public static final int lv_duserlist=0x7f09003a;
-        public static final int lv_userlist=0x7f0900c0;
+        public static final int lv_userlist=0x7f0900c3;
         public static final int maxvalue=0x7f09006a;
         public static final int mdbut_return=0x7f090099;
         public static final int mdbut_update=0x7f090098;
@@ -243,7 +244,7 @@ public final class R {
         public static final int myListView=0x7f090049;
         public static final int my_list=0x7f090076;
         public static final int mygridview=0x7f0900bb;
-        public static final int name=0x7f0900c2;
+        public static final int name=0x7f0900c5;
         public static final int ok=0x7f09005e;
         public static final int password=0x7f090001;
         public static final int pro_edit=0x7f0900b6;
@@ -253,7 +254,8 @@ public final class R {
         public static final int recdate=0x7f090046;
         public static final int rflink=0x7f0900b2;
         public static final int rg_sex=0x7f09000c;
-        public static final int rl_header_layout=0x7f0900bc;
+        public static final int rl_header_layout=0x7f0900bf;
+        public static final int show=0x7f0900bd;
         public static final int textView1=0x7f090003;
         public static final int textView2=0x7f090078;
         public static final int text_fault=0x7f09001e;
@@ -297,6 +299,7 @@ public final class R {
         public static final int tv_rperson=0x7f090080;
         public static final int tv_sperson=0x7f09007e;
         public static final int tv_user=0x7f09001d;
+        public static final int upload=0x7f0900bc;
         public static final int userinformation=0x7f09007a;
         public static final int username=0x7f090000;
         public static final int write=0x7f0900b0;
@@ -351,8 +354,9 @@ public final class R {
         public static final int tab_item_view=0x7f03002e;
         public static final int test=0x7f03002f;
         public static final int testinterface=0x7f030030;
-        public static final int userlist=0x7f030031;
-        public static final int userview=0x7f030032;
+        public static final int uploadtoserver=0x7f030031;
+        public static final int userlist=0x7f030032;
+        public static final int userview=0x7f030033;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -469,6 +473,7 @@ public final class R {
         public static final int selectall=0x7f060019;
         public static final int sendperson=0x7f06002a;
         public static final int set_baudrate=0x7f06004a;
+        public static final int show=0x7f060081;
         public static final int singlesearch=0x7f060046;
         public static final int sloved_method=0x7f060060;
         public static final int solvetest=0x7f06007f;
@@ -482,6 +487,7 @@ public final class R {
         public static final int time=0x7f060072;
         public static final int update_fault=0x7f060063;
         public static final int update_sloved=0x7f060065;
+        public static final int upload=0x7f060080;
         public static final int userinformation=0x7f060007;
         public static final int wait=0x7f060042;
         public static final int welcome=0x7f060002;

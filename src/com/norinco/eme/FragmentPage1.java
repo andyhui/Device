@@ -1,14 +1,20 @@
 package com.norinco.eme;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FilterOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -214,7 +220,7 @@ public class FragmentPage1 extends Fragment {
 		//
 		// mButtonOk.setOnClickListener(buttonListener);
 		// mButtonFault.setOnClickListener(buttonListener);
-		
+
 		methodData = new MethodData(getActivity());
 
 		mSQLiteDatabase = this.getActivity().openOrCreateDatabase(
@@ -258,8 +264,6 @@ public class FragmentPage1 extends Fragment {
 		c3.setOnCheckedChangeListener(new CheckBoxListener());
 		c4.setOnCheckedChangeListener(new CheckBoxListener());
 		c5.setOnCheckedChangeListener(new CheckBoxListener());
-		
-		
 
 		/*
 		 * for (int i = 0; i < 5; i++) { insertTable(table_id[i], table_data[i],
@@ -303,19 +307,60 @@ public class FragmentPage1 extends Fragment {
 							 */.create();
 					dlg.show();
 				}
+
+				Properties properties = new Properties();
+				Properties propertiesProblem = new Properties();
+
 				int j = 0;
-				for(int i = 0;i < countMethod;i++ ){
+				for (int i = 0; i < countMethod; i++) {
 					System.out.println("解决方案是：");
 					System.out.println(arrList.get(i).isStatus());
-					if(arrList.get(i).isStatus()){
-						/*生成维修历史*/
-						insertData(arrList.get(i).getId(),table_data[miCount-1]+" "+"维修成功");
-					}else{
-						/*生成故障历史*/
+					if (arrList.get(i).isStatus()) {
+						/* 生成维修历史 */
+						String methods = table_data[miCount - 1] + " " + "维修成功";
+						insertData(arrList.get(i).getId(), methods);
+						properties.put("data", methods);
+
+						try {
+							@SuppressWarnings("deprecation")
+							FileOutputStream stream = getActivity()
+									.openFileOutput(
+											"methods.cfg",
+											Context.MODE_WORLD_READABLE
+													+ Context.MODE_WORLD_WRITEABLE);
+							properties.store(stream, "");
+						} catch (FileNotFoundException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+
+					} else {
+						/* 生成故障历史 */
 						j++;
-						if(j==countMethod){
-							System.out.println(miCount+table_data[miCount-1]);
-							methodData.insert(table_data[miCount-1], table_data[miCount-1]);
+						if (j == countMethod) {
+							System.out.println(miCount
+									+ table_data[miCount - 1]);
+							methodData.insert(table_data[miCount - 1],
+									table_data[miCount - 1]);
+							propertiesProblem.put("problem", table_data[miCount - 1]);
+							try {
+								@SuppressWarnings("deprecation")
+								FileOutputStream stream = getActivity()
+										.openFileOutput(
+												"problem.cfg",
+												Context.MODE_WORLD_READABLE
+														+ Context.MODE_WORLD_WRITEABLE);
+								properties.store(stream, "");
+							} catch (FileNotFoundException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							} catch (IOException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
 						}
 					}
 				}
@@ -429,7 +474,6 @@ public class FragmentPage1 extends Fragment {
 			// insertData(miCount, data);
 			flag = false;
 			update(miCount);
-			
 
 		}
 
@@ -486,7 +530,7 @@ public class FragmentPage1 extends Fragment {
 				flag = true;
 				selectItem = position;
 				switch (position) {
-				case 0:					
+				case 0:
 					showDialog();
 					break;
 				case 1:

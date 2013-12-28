@@ -165,6 +165,11 @@
             android:name="com.norinco.eme.TestActivity"
             android:label="@string/app_name" >
         </activity>
+        <!-- Upload -->
+        <activity
+            android:name="com.norinco.upload.Upload"
+            android:label="@string/app_name" >
+        </activity>
         
         <!-- TestActivity -->
         <!-- gpioMask Gen2-->

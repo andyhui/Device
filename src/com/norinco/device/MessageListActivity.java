@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.norinco.rfid.RfidParamaSet;
+import com.norinco.upload.Upload;
 import com.norinco.eme.Eme_fault;
 import com.norinco.eme.TestActivity;
 
@@ -144,7 +145,7 @@ public class MessageListActivity extends Activity {
 					/* 上传维修信息与故障修复办法 */
 					if (l >= 1) {
 						intent = new Intent(MessageListActivity.this,
-								TestActivity.class);
+								Upload.class);
 //						intent.putExtra("level", l);
 //						intent.putExtra("user", user);
 						startActivity(intent);
