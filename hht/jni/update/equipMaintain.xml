@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<equipMaintain_table>
+	<equipMaintain id='1'>
+		<equipment_id>001</equipment_id>
+		<equipment_name>电子标签1</equipment_name>
+        <send_time>20141226</send_time>
+        <send_department>南方新空</send_department>
+        <send_man>张三</send_man>
+        <fault_decription>线路损坏</fault_decription>
+        <fault_cause>短路</fault_cause>
+        <fault_type>000</fault_type>
+        <fault_level>重要</fault_level>
+        <solution>换线</solution>
+        <meterial_consume>电线</meterial_consume>
+        <state>待修复</state>
+        <repaired_man>李四</repaired_man>
+        <repaired_time>20141212</repaired_time>
+	</equipMaintain>
+	<equipMaintain id='2'>
+		<equipment_id>002</equipment_id>
+		<equipment_name>电子标签2</equipment_name>
+        <send_time>20141226</send_time>
+        <send_department>北方信息</send_department>
+        <send_man>王小二</send_man>
+        <fault_decription>硬盘损坏</fault_decription>
+        <fault_cause>操作错误</fault_cause>
+        <fault_type>001</fault_type>
+        <fault_level>普通</fault_level>
+        <solution>换硬盘</solution>
+        <meterial_consume>硬盘</meterial_consume>
+        <state>待修复</state>
+        <repaired_man>王小二</repaired_man>
+        <repaired_time>20141227</repaired_time>
+	</equipMaintain>
+</equipMaintain_table>

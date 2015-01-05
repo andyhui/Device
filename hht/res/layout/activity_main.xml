@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cngc.hht.StartActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/title_bar"
+        android:visibility="invisible" >
+
+        <ImageButton
+            android:id="@+id/reback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back_icon"
+            android:contentDescription="@string/app_name"
+            android:onClick="about_back" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/reback_btn"
+            android:text="@string/re"
+            android:textColor="@color/white"            
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout" >
+
+        <ImageView
+            android:id="@+id/cngc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/cngc"
+            android:src="@drawable/cngc" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_below="@id/cngc"
+            android:layout_centerHorizontal="true"           
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="35sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="@string/cngc" >
+    </TextView>
+
+</RelativeLayout>

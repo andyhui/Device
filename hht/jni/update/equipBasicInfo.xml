@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<equipMaintain_table>
+	<equipMaintain id='1'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+	<equipMaintain id='2'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+</equipMaintain_table>
+<equipMaintain_table>
+	<equipMaintain id='1'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+	<equipMaintain id='2'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+</equipMaintain_table>
+<equipMaintain_table>
+	<equipMaintain id='1'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+	<equipMaintain id='2'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+</equipMaintain_table>
+<equipMaintain_table>
+	<equipMaintain id='1'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+	<equipMaintain id='2'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+</equipMaintain_table>
+<equipMaintain_table>
+	<equipMaintain id='1'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+	<equipMaintain id='2'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+</equipMaintain_table>
+<equipMaintain_table>
+	<equipMaintain id='1'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+	<equipMaintain id='2'>
+		<faultAssetNo></faultAssetNo>
+		<faultRepairTime></faultRepairTime>
+		<faultDescription></faultDescription>
+		<faultSolution></faultSolution>
+	</equipMaintain>
+</equipMaintain_table>
+
+	

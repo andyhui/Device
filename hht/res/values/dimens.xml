@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="slidingmenu_offset_logout">60dp</dimen>
+    
+    <dimen name="home_scan_button_bg_height">116.0dip</dimen>
+    <dimen name="home_scan_button_height">110.0dip</dimen>
+    <dimen name="home_scan_button_layout_height">484.0dip</dimen>
+
+</resources>

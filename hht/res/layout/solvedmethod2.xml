@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!--
+         <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+    -->
+    <!-- android:visibility="visible" > -->
+
+
+    <!--
+             <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    -->
+
+    <include layout="@layout/basedeviceinfo1" >
+    </include>
+
+    <TextView
+        android:id="@+id/problem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="当前故障"
+        android:textColor="@color/red"
+        android:textSize="20sp" >
+    </TextView>
+
+    <LinearLayout style="@style/leba_bg_layout" >
+
+        <LinearLayout style="@style/leba_bg_single_layout" >
+
+            <TextView
+                android:id="@+id/solvedmethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="@string/update_fault"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <LinearLayout style="@style/leba_bg_layout" >
+
+        <LinearLayout style="@style/leba_bg_single_layout" >
+
+            <ListView
+                android:id="@+id/method_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="false"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/eme_other" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edit_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/TextView"
+                android:inputType="none"
+                android:textStyle="normal" >
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete" />
+        </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!--
+             <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/history_sloved"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+        -->
+
+        <Button
+            android:id="@+id/isave"
+            android:layout_width="60dip"
+            android:layout_height="38dip"
+            android:minHeight="16dip"
+            android:text="@string/save"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/iback"
+            android:layout_width="60dip"
+            android:layout_height="38dip"
+            android:text="@string/back"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+
+    <!-- </ScrollView> -->
+
+</LinearLayout><!--
+    <ScrollView>
+    </ScrollView>
+-->
+<!-- </LinearLayout> -->

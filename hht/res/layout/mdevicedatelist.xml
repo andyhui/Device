@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/init_port"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_mduser"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/TextView1"
+        android:layout_toLeftOf="@drawable/arrow_right"
+        android:layout_toRightOf="@id/TextView1"
+        android:height="25dp" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:height="25dp"
+        android:text="@string/modifydate"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:src="@drawable/arrow_right"
+        android:layout_width="32dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

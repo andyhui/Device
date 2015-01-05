@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<RelativeLayout android:id="@+id/drl_header_layout"
+    	android:visibility="gone"
+		android:background="@drawable/conversationlist_title_bg"
+		android:layout_width="fill_parent" 
+		android:layout_height="50.0dip">
+		
+		 <ImageButton
+		     android:id="@+id/ib_dsearch"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentLeft="true"
+		     android:layout_centerVertical="true"
+		     android:layout_marginLeft="6.0dip"
+		     android:contentDescription="@string/search"
+		     android:src="@drawable/ic_search" />
+			
+		<ImageView
+		    android:id="@+id/iv_dmulti_select"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="6.0dip"
+		    android:background="@drawable/btn_normal_bg"
+		    android:contentDescription="@string/muti_select"
+		    android:src="@drawable/ic_multi_select" />
+
+		<!-- 编辑框 -->
+		     
+		<EditText
+		    android:id="@+id/et_dsearch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@id/iv_dmulti_select"
+		    android:layout_toRightOf="@id/ib_dsearch"
+		    android:background="#3C3C3C"
+		    android:ems="10"
+		    android:gravity="center"
+		    android:hint="@string/in_devnameorid"
+		    android:textColor="#FFFFFF"
+		    android:textColorHint="#F0F0F0" >
+
+		    <requestFocus />
+		</EditText>
+		
+	</RelativeLayout>
+	<ListView 
+   android:id="@+id/lv_duserlist"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:layout_below="@+id/drl_header_layout"
+></ListView>
+
+	<GridView
+	    android:id="@+id/gv_dbutton_menu"
+	    android:layout_width="fill_parent"
+	    android:layout_height="75sp"
+	    android:layout_alignParentBottom="true"
+	    android:visibility="visible" >
+</GridView>
+</RelativeLayout>

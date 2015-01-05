@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+        <RelativeLayout
+            android:id="@+id/multi_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/title_bar"
+            android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/muti_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back_icon"
+            android:contentDescription="@string/app_name"
+            android:onClick="about_back" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/muti_back"
+            android:text="@string/setting"
+            android:textColor="@color/white"            
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/scan_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/home_bg_normal" >
+
+        <ImageView
+            android:id="@+id/scan_button_bg_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/home_shape_rounded_rectangle_scan_button_bg_shadow"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/scan_button_bg"
+            android:layout_width="@dimen/home_scan_button_bg_height"
+            android:layout_height="@dimen/home_scan_button_bg_height"
+            android:layout_gravity="center"
+            android:background="@drawable/home_shape_rounded_rectangle_scan_button_bg"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/scan_button"
+            android:layout_width="@dimen/home_scan_button_height"
+            android:layout_height="@dimen/home_scan_button_height"
+            android:layout_gravity="center"
+            android:background="@drawable/home_shape_rounded_rectangle_scan_button"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/scan_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="52.0dip"
+            android:text="@string/stop"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/scan_progressbar"
+            android:layout_width="145.0dip"
+            android:layout_height="145.0dip"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/home_scan_button_progress"
+            android:indeterminateDuration="1000" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/scan_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="3" >
+    </ListView>
+
+</LinearLayout>

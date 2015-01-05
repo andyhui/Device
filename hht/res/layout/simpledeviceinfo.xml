@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:text="@string/detelmessage"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_marginTop="2dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <!--
+        垂直居中 右对齐
+		android:gravity="center_vertical|right"
+        -->
+
+        <TextView
+            android:id="@+id/basedevname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:gravity="center_vertical|right"
+            android:textColor="@android:color/black"
+            android:text="@string/devname"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/basetv_devname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="5dip"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!--
+        垂直居中 右对齐
+		android:gravity="center_vertical|right"
+        -->
+
+        <TextView
+            android:id="@+id/basedevnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:gravity="center_vertical|right"
+            android:text="@string/devnum"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/basetv_devnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@id/basedevnum"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/basedevgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dip"
+            android:gravity="center_vertical|right"
+            android:text="@string/devgroup"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/basetv_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/basedevgroup"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/basefactory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dip"
+            android:gravity="center_vertical|right"
+            android:text="@string/factory"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/basetv_factory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/basefactory"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/baseprodate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dip"
+            android:gravity="center_vertical|right"
+            android:text="@string/productdate"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/basetv_prodate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/baseprodate"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/baserecdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dip"
+            android:gravity="center_vertical|right"
+            android:text="@string/recivedate"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/basetv_recdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/baserecdate"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/basemodifydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dip"
+            android:gravity="center_vertical|right"
+            android:text="@string/modifydate"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/basetv_modifydate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/basemodifydate"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

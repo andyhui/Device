@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+        
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/people1" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+        
+        <Button 
+            android:id="@+id/logout"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/logout"
+            android:textSize="12sp"
+            android:background="@drawable/ad_index_item_background" />
+</LinearLayout>
